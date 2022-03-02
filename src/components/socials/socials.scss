@@ -1,0 +1,12 @@
+@import '../../assets/sass/mixins.scss';
+@import '../../assets/sass/variables.scss';
+
+.socials-list{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.socials-list__item{
+  margin-right: 20px;
+}

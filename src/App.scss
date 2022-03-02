@@ -1,0 +1,112 @@
+@import './assets/sass/mixins.scss';
+@import './assets/sass/variables.scss';
+
+
+.site-intro{
+  padding: 15px 0;
+  background-color: $color-bgi;
+}
+
+.site-intro__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-intro__list{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.site-intro__item:not(:last-child){
+  margin-right: 30px;
+}
+
+.site-intro__link{
+  color: $color-text;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon::before{
+  margin-right: 15px;
+  background-image: url(../src/assets/icon/phone-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  content: '';
+}
+
+.location-icon::before{
+  margin-right: 15px;
+  background-image: url(../src/assets/icon/location-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  content: '';
+}
+
+.links{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.links__item:not(:last-child){
+  margin-right: 30px;
+}
+
+.links__item{
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-text;
+}
+
+.site-hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.site-hero__wrapper{
+  width: 60%;
+  margin-right: 50px;
+}
+
+.site-hero__slider{
+  width: 40%;
+}
+
+.slider__img{
+  width: 550px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.site-hero__title{
+  margin: 0;
+  margin-bottom: 35px;
+  color: $color-text;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.site-hero__text{
+  width: 80%;
+  margin: 0;
+  margin-bottom: 80px;
+  color: $color-text;
+  line-height: 30px;
+  font-size: 18px;
+}
