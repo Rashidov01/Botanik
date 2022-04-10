@@ -1,0 +1,60 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+
+//* reason-section
+.reason{
+  padding: 50px 0;
+}
+
+.reason__list{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reason__item{
+  min-height: 120px;
+  padding: 20px 25px;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  width: calc(25% - 15px);
+}
+
+.reason__item-icon{
+  margin-right: 15px;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.reason-desc__title{
+  margin-bottom: 10px;
+  font-size: 21px;
+  color: $color-text
+}
+
+.reason-desc__time{
+  color: $secondary;
+}
+
+//* news-section
+.news{
+  padding: 80px 0;
+}
+.news__detail{
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.news__detail-title{
+  @include title;
+}
+
+.news__detail-text{
+  width: 100%;
+  font-size: 16px;
+  color: $color-text;
+}

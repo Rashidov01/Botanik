@@ -1,12 +1,12 @@
 import React from 'react';
-import { Footer, Header } from '../../components';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer'
 import { Outlet } from 'react-router-dom';
 
-const Layaut = () => {
-
+export default function Layout() {
   return (
     <>
-      <div className='wrapper'>
+      <div className='site-container'>
         <header>
           <Header />
         </header>
@@ -14,14 +14,12 @@ const Layaut = () => {
         <main>
           <Outlet />
         </main>
-      </div>
 
       <footer>
         <Footer />
       </footer>
 
+      </div>
     </>
   );
-};
-
-export default Layaut;
+}

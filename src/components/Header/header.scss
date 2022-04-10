@@ -1,0 +1,26 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.header{
+  padding: 30px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__list{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.nav__item{
+  margin-right: 50px;
+}
+
+.nav__link{
+  color: $color-text;
+  text-decoration: none;
+}

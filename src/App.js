@@ -1,19 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-
-//styles
-import '../src/assets/sass/main.scss';
-import '../src/App.scss'
-import Home from "./pages/Home";
-import Layout from "./pages/Layout";
-import Contact from "./pages/Contact";
+import { Layout, About, Blog, Catalog, Contact, Home, Store } from "./pages";
 
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<Home />}></Route>
-        <Route path="Contact" element={<Contact />}></Route>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="Catalog" element={<Catalog />} />
+        <Route path="Store" element={<Store />} />
+        <Route path="Contact" element={<Contact />} />
       </Route>
     </Routes>
   );
-};
+}
