@@ -1,7 +1,6 @@
 @import "../../mixins.scss";
 @import "../../variables.scss";
 
-
 //* reason-section
 .reason{
   padding: 50px 0;
@@ -21,6 +20,7 @@
   display: flex;
   align-items: center;
   width: calc(25% - 15px);
+  border-radius: 20px;
 }
 
 .reason__item-icon{
@@ -40,21 +40,91 @@
   color: $secondary;
 }
 
-//* news-section
-.news{
+//* news-section &&&& best-seller &&&& blogs *//
+.news, .best, .blog{
   padding: 80px 0;
 }
-.news__detail{
+.news__detail, .best__detail, .blog__detail{
   margin-bottom: 35px;
   text-align: center;
 }
 
-.news__detail-title{
+.news__detail-title, .best__detail-title, .blog__detail-title{
   @include title;
 }
 
-.news__detail-text{
+.news__detail-text, .best__detail__text, .blog__detail-text{
   width: 100%;
   font-size: 16px;
   color: $color-text;
+}
+
+.blog__card{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-blog__box{
+  width: calc(33.3% - 15px);
+  text-align: center;
+  transition: all .4s ease;
+  border-radius: 20px;
+
+  &:hover {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.06);
+  }
+}
+
+.card-blog__box-head{
+  position: relative;
+  height: 260px;
+  border: 1px solid $border;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.card-blog__box-img{
+  width: 100%;
+  height: 258px;
+  opacity: .7;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-blog__box-body{
+  padding: 30px 15px;
+}
+
+.card-blog__box-date{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $green-cl;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #fff;
+}
+
+.card-blog__box-day, .card-blog__box-month{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-blog__box-title{
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-blog__box-text{
+  width: 100%;
+  color: $grey-cl;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
+import SiteHeader from '../../components/Header/Site-header';
 import Footer from '../../components/Footer/Footer'
 import { Outlet } from 'react-router-dom';
 
@@ -7,8 +7,8 @@ export default function Layout() {
   return (
     <>
       <div className='site-container'>
-        <header>
-          <Header />
+        <header className='site-header'>
+          <SiteHeader />
         </header>
 
         <main>
@@ -18,7 +18,6 @@ export default function Layout() {
       <footer>
         <Footer />
       </footer>
-
       </div>
     </>
   );

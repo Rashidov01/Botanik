@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from "../../assets/icon/logo-add.png"
+import Logo from "../../assets/icon/logo.png"
 import "./header.scss";
 
 
-export default function Header() {
+export default function SiteHeader() {
   return (
-    <header className="header">
+    <header className="header site-header">
       <nav className="header-nav nav">
         <ul className="nav__list">
           <li className="nav__item">
@@ -15,7 +15,7 @@ export default function Header() {
           <li className="nav__item">
             <Link className="nav__link" to="/Store">Store</Link>
           </li>
-          <li className="nav__item"><img src={Logo} alt="site logo" width="80" height="80" /></li>
+          <li className="nav__item logo-item"><img className="nav__logo" src={Logo} alt="site logo" width="60" height="60" /></li>
           <li className="nav__item">
             <Link className="nav__link" to="/About">About</Link>
           </li>
