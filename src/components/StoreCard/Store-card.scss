@@ -1,0 +1,92 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.store-cards{
+  margin-top: -12px;
+  margin-bottom: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.store-card{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid $border;
+  text-align: center;
+  width: calc(33.3% - 14px);
+  transition: all .4s ease;
+  opacity: .8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.head-card{
+  margin-bottom: 20px;
+  height: 350px;
+}
+
+.head-card__img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.body-card__title{
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: $green-cl;
+}
+
+.body-card__price{
+  color: $grey-cl;
+}
+
+.body-card__text{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: none;
+}
+
+//* card-list
+.card-list{
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.card-list .store-cards{
+  flex-direction: column;
+}
+
+.card-list .body-card__head{
+  margin-bottom: 20px;
+}
+
+.card-list .head-card{
+  margin-right: 20px;
+  min-width: 160px;
+  height: 210px;
+  margin-bottom: 0;
+}
+
+.card-list .head-card__img{
+  min-width: 160px;
+  height: 210px;
+}
+
+.card-list .body-card__text{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  width: 100%;
+}
