@@ -1,0 +1,26 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.contact{
+  padding: 80px 0;
+  min-height: 100%;
+  height: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  margin: auto;
+}
+
+.contact__list{
+  @include list-unstyled;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+  height: 60vh;
+}
+
+.contact__item{
+  margin-bottom: 45px;
+  width: 250px;
+}

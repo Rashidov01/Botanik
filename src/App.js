@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Layout, About, Blog, Catalog, Contact, Home, Store } from "./pages";
+import { CardOpen } from "./pages";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Route path="Catalog" element={<Catalog />} />
         <Route path="Store" element={<Store />} />
         <Route path="Contact" element={<Contact />} />
+        <Route path="CardOpen" element={<CardOpen />} />
       </Route>
     </Routes>
   );

@@ -69,7 +69,7 @@ export default function Footer() {
                 height="25"
               />
               <h3 className="info-footer__item-title">
-                Lorem ipsum dolor sit amet consectetur.
+                г. Ташкент. Яшнабадский район, махалля «Олмос»
               </h3>
             </li>
             <li className="info-footer__item">

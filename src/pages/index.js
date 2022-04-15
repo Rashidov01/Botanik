@@ -5,6 +5,7 @@ import Catalog from "./Catalog/Catalog";
 import Contact from "./Contact/Contact";
 import Store from "./Store/Store";
 import Layout from "./Layout/Layout";
+import CardOpen from "./CardOpen/CardOpen";
 
 export {
   Layout,
@@ -13,5 +14,6 @@ export {
   Blog,
   Catalog,
   Contact,
-  Store
+  Store,
+  CardOpen
 }
