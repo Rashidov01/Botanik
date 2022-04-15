@@ -78,24 +78,7 @@ export default function Store() {
             </div>
           </div>
           <div className="store-item">
-            <div className="store-item__header">
-              <span className="store-item__text">
-                Showing 1–9 of 24 results
-              </span>
-              <button
-                className="form-store__btn btn-grid"
-                type="button"
-              ></button>
-              <button
-                className="form-store__btn btn-list"
-                type="button"
-              ></button>
-            </div>
-            <div className="store-item__main store-main">
-              <div className="store-main__wrapper">
-                <StoreCard />
-              </div>
-            </div>
+            <StoreCard />
           </div>
         </div>
       </section>

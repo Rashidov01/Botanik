@@ -1,0 +1,66 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.card-open {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card-open__holder,
+.card-open__info {
+  width: 50%;
+}
+
+.card-open__holder{
+  margin-right: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-open__holder-img{
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card-info__head{
+  margin-bottom: 35px;
+}
+
+.card-info__head-title {
+  font-weight: 800;
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 2px;
+}
+
+.card-info__head-price {
+  font-family: $font-roboto;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $green-cl;
+}
+
+.card-detail__title{
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-detail__text{
+  color: $grey-cl;
+  overflow: auto;
+  width: 100%;
+  max-height: 445px;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}

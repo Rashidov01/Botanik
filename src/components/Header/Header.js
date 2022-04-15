@@ -22,6 +22,9 @@ export default function Header() {
           <li className="nav__item">
             <Link className="nav__link" to="/Contact">Contact</Link>
           </li>
+          <li className="nav__item">
+            <Link className="nav__link" to="/CardOpen">Card opened</Link>
+          </li>
         </ul>
       </nav>
     </header>
