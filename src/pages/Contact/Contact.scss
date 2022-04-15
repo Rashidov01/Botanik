@@ -3,9 +3,6 @@
 
 .contact{
   padding: 80px 0;
-  min-height: 100%;
-  height: 100%;
-  flex-grow: 1;
   justify-content: center;
   margin: auto;
 }
@@ -13,14 +10,62 @@
 .contact__list{
   @include list-unstyled;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: left;
-  margin: auto;
-  height: 60vh;
+  align-items: center;
+  height: 30vh;
 }
 
 .contact__item{
-  margin-bottom: 45px;
-  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 40px;
+  width: calc(33.3% - 20px);
+  border-right: 1px solid $border;
+
+  &:last-child{
+    border-right: none;
+  }
+}
+
+.item-info{
+  min-height: 90px;
+  width: 100%;
+}
+
+.item-holder{
+  margin: 0 auto 30px;
+  width: 50px;
+  height: 50px;
+  border: 1px dotted $green-cl;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-contact__name{
+  margin-bottom: 10px;
+  color: $green-cl;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.item-contact__text{
+  margin: 0 auto;
+  color: $grey-cl;
+  width: 80%;
+}
+
+.item-contact__link{
+  text-decoration: none;
+  color: $grey-cl;
+}
+
+.item-contact__icon{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
