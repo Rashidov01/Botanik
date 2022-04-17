@@ -7,7 +7,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div onClick={onClick} className="right-arrow">
-      <div className={className} style={{ ...style, display: "block" }} />
+      <div className={className} style={{ ...style, display: "none" }} />
     </div>
   );
 }
@@ -16,18 +16,18 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div onClick={onClick} className="left-arrow">
-      <div className={className} style={{ ...style, display: "block" }} />
+      <div className={className} style={{ ...style, display: "none" }} />
     </div>
   );
 }
 
-export default function CardSlider({ children, show }) {
+export default function CardSlider({ children }) {
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: show,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     adaptiveHeight: true,
     responsive: [
       {

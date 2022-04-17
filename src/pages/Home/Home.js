@@ -17,16 +17,16 @@ export default function Home() {
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-      }
+      },
     },
     {
       breakpoint: 778,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-      }
-    }
-  ]
+      },
+    },
+  ];
   return (
     <div className="home">
       <Header />
@@ -40,11 +40,15 @@ export default function Home() {
               facilis.
             </p>
           </div>
-          <CardSlider res={retingRespon} show={1}>
+          <CardSlider res={retingRespon} show={4}>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
             <Card />
           </CardSlider>
         </section>
-        <section className="reason">
+        {/* <section className="reason">
           <div className="reason__inner">
             <ul className="reason__list">
               <li className="reason__item">
@@ -77,8 +81,8 @@ export default function Home() {
               </li>
             </ul>
           </div>
-        </section>
-        <section className="best">
+        </section> */}
+        {/* <section className="best">
           <div className="best__detail">
             <h3 className="best__detail-title">Best seller</h3>
             <p className="best__detail-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus illum enim quidem, nihil possimus doloremque?</p>
@@ -86,8 +90,8 @@ export default function Home() {
           <div className="best__box">
             <Card />
           </div>
-        </section>
-        <section className="blog">
+        </section> */}
+        {/* <section className="blog">
           <div className="blog__detail">
             <h3 className="blog__detail-title">Latest News</h3>
             <p className="blog__detail-text">Lorem ipsum dolor sit amet consectetur.</p>
@@ -133,9 +137,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

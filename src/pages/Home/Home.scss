@@ -75,6 +75,12 @@
   }
 }
 
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card-blog__box-head{
   position: relative;
   height: 260px;
@@ -127,4 +133,30 @@
 .card-blog__box-text{
   width: 100%;
   color: $grey-cl;
+}
+
+@include breakpoint-down(780px){
+  .news, .best, .blog{
+    padding: 40px 0;
+  }
+  .news__detail, .best__detail, .blog__detail{
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .news__detail-title, .best__detail-title, .blog__detail-title{
+    margin-bottom: 25px;
+    font-size: 25px;
+
+    &:before{
+      bottom: -15px;
+      width: 180px;
+      height: 14px;
+    }
+  }
+
+  .news__detail-text, .best__detail__text, .blog__detail-text{
+    width: 100%;
+    font-size: 12px;
+  }
 }
