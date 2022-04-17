@@ -1,13 +1,46 @@
 import React from "react";
 import "./Hero.scss";
+import Slider from "react-slick";
 import Img from "../../assets/img/hero-img.png";
-import Next from "../../assets/icon/back.svg";
-import Prev from "../../assets/icon/forw.svg";
-import Telegram from "../../assets/icon/telegram.svg";
-import Instagram from "../../assets/icon/facebook.svg";
-import Facebook from "../../assets/icon/instagram.svg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "boxicons";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div onClick={onClick} className="right-arrow">
+      <div className={className} style={{ ...style, display: "none" }} />
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div onClick={onClick} className="left-arrow">
+      <div
+        className={className}
+        style={{ ...style, display: "none", cursor: "pointer" }}
+      />
+    </div>
+  );
+}
 
 export default function Hero() {
+  const settings = {
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
   return (
     <div className="hero">
       <div className="hero__inner">
@@ -16,48 +49,37 @@ export default function Hero() {
           <ul className="socials">
             <li className="socials__item">
               <a className="socials__link" href="#">
-                <img
-                  className="socials__img"
-                  src={Telegram}
-                  alt="telegram logo"
-                  width="30"
-                  height="30"
-                />
+                <i class="socials__img bx bxl-telegram"></i>
               </a>
             </li>
             <li className="socials__item">
               <a className="socials__link" href="#">
-                <img
-                  className="socials__img"
-                  src={Instagram}
-                  alt="instagram logo"
-                  width="30"
-                  height="30"
-                />
+                <i class="socials__img bx bxl-instagram"></i>
               </a>
             </li>
             <li className="socials__item">
               <a className="socials__link" href="#">
-                <img
-                  className="socials__img"
-                  src={Facebook}
-                  alt="facebook logo"
-                  width="30"
-                  height="30"
-                />
+                <i class="socials__img bx bxl-facebook"></i>
               </a>
             </li>
           </ul>
         </div>
         <div className="hero__slider slider-hero">
-          <img className="slider-hero__img" src={Img} alt="hero img" />
-          <div className="slider-btns btn-holder">
-            <button className="slider-hero__btn btn-next" type="button">
-              <img className="slider-btn__icon" src={Next} alt="next icon" />
-            </button>
-            <button className="slider-hero__btn btn-prev" type="button">
-              <img className="slider-btn__icon" src={Prev} alt="prev icon" />
-            </button>
+          <div className="holder">
+            <Slider {...settings}>
+              <div className="wrapper">
+                <img className="slider-hero__img" src={Img} alt="hero img" />
+              </div>
+              <div className="wrapper">
+                <img className="slider-hero__img" src={Img} alt="hero img" />
+              </div>
+              <div className="wrapper">
+                <img className="slider-hero__img" src={Img} alt="hero img" />
+              </div>
+              <div className="wrapper">
+                <img className="slider-hero__img" src={Img} alt="hero img" />
+              </div>
+            </Slider>
           </div>
         </div>
       </div>

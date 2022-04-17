@@ -1,15 +1,32 @@
-import React from 'react'
-import "./Home.scss"
-import Hero from '../../components/Hero//Hero'
+import React from "react";
+import "./Home.scss";
+// import CardSlider from "../CardSlider/CardSlider";
+import Hero from "../../components/Hero//Hero";
 import ship from "../../assets/icon/shipping.svg";
 import call from "../../assets/icon/call.svg";
 import auto from "../../assets/icon/auto.svg";
-import Card from '../../components/Card/Card';
+import Card from "../../components/Card/Card";
 import Img4 from "../../assets/img/img6.jpeg";
 import Img2 from "../../assets/img/blog-img.jpeg";
-import { Footer, Header } from '../../components';
+import { Footer, Header, CardSlider } from "../../components";
 
 export default function Home() {
+  const retingRespon = [
+    {
+      breakpoint: 1018,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 778,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    }
+  ]
   return (
     <div className="home">
       <Header />
@@ -18,11 +35,14 @@ export default function Home() {
         <section className="news">
           <div className="news__detail">
             <h2 className="news__detail-title">New arrival</h2>
-            <p className="news__detail-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, facilis.</p>
+            <p className="news__detail-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
+              facilis.
+            </p>
           </div>
-          <div className="news__box">
+          <CardSlider res={retingRespon} show={1}>
             <Card />
-          </div>
+          </CardSlider>
         </section>
         <section className="reason">
           <div className="reason__inner">
@@ -117,5 +137,5 @@ export default function Home() {
       </div>
       <Footer />
     </div>
-  )
+  );
 }
