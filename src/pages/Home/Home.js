@@ -6,7 +6,13 @@ import call from "../../assets/icon/call.svg";
 import auto from "../../assets/icon/auto.svg";
 import Card from "../../components/Card/Card";
 
-import { Footer, Header, CardSlider, BlogSlider, BlogCard } from "../../components";
+import {
+  Footer,
+  Header,
+  CardSlider,
+  BlogSlider,
+  BlogCard,
+} from "../../components";
 
 export default function Home() {
   return (
