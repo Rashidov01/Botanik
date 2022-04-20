@@ -24,35 +24,17 @@ export default function Footer() {
             <ul className="socials">
               <li className="socials__item">
                 <a className="socials__link" href="#">
-                  <img
-                    className="footer-socials__icon"
-                    src={Telegram}
-                    alt="telegram logo"
-                    width="30"
-                    height="30"
-                  />
+                  <i class="socials__img bx bxl-telegram"></i>
                 </a>
               </li>
               <li className="socials__item">
                 <a className="socials__link" href="#">
-                  <img
-                    className="footer-socials__icon"
-                    src={Facebook}
-                    alt="facebook logo"
-                    width="30"
-                    height="30"
-                  />
+                  <i class="socials__img bx bxl-instagram"></i>
                 </a>
               </li>
               <li className="socials__item">
                 <a className="socials__link" href="#">
-                  <img
-                    className="footer-socials__icon"
-                    src={Instagram}
-                    alt="instagram logo"
-                    width="30"
-                    height="30"
-                  />
+                  <i class="socials__img bx bxl-facebook"></i>
                 </a>
               </li>
             </ul>

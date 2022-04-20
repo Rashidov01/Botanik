@@ -5,6 +5,8 @@ import Hero from "./Hero/Hero";
 import HeroPage from "./Hero/hero-page/hero-page";
 import StoreCard from "./StoreCard/Store-card";
 import CardSlider from "./CardSlider/CardSlider";
+import BlogSlider from "./BlogSlider/BlogSlider";
+import BlogCard from "./BlogCard/BlogCard";
 
 export {
   Header,
@@ -13,5 +15,7 @@ export {
   Hero,
   HeroPage,
   StoreCard,
-  CardSlider
+  CardSlider,
+  BlogSlider,
+  BlogCard
 }

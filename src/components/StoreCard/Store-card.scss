@@ -81,14 +81,16 @@
 
 .card-list .head-card{
   margin-right: 20px;
-  min-width: 160px;
+  width: 210px;
   height: 210px;
+  min-width: 160px;
   margin-bottom: 0;
 }
 
 .card-list .head-card__img{
-  min-width: 160px;
+  width: 210px;
   height: 210px;
+  object-fit: cover;
 }
 
 .card-list .body-card__text{

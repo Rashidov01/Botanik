@@ -19,7 +19,8 @@
 
 .footer__logo{
   width: 80px;
-  height: 60px;
+  height: 40px;
+  margin-bottom: 10px;
   object-fit: contain;
 }
 
@@ -39,7 +40,7 @@
   align-items: center;
 
   &:last-child{
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -52,6 +53,10 @@
 
 .info-footer__item-title{
   font-size: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .info-footer__item-link{
@@ -66,12 +71,40 @@
 }
 
 .footer-socials__icon{
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
+}
+
+.socials__link{
+  width: 18px;
+  height: 18px;
 }
 
 .footer__socials-title{
   font-size: 14px;
   margin-right: 15px;
+}
+
+@include breakpoint-down (640px){
+  .footer__wrapper{
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .footer__holder{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .info-footer__item-link,.info-footer__item-title{
+    font-size: 12px;
+  }
+
+  .info-footer__item-icon{
+    margin-right: 12px;
+    width: 16px;
+    height: 16px;
+  }
 }

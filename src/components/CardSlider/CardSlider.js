@@ -3,19 +3,19 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function SampleNextArrow(props) {
+function SampleNextArrowCard(props) {
   const { className, style, onClick } = props;
   return (
-    <div onClick={onClick} className="right-arrow">
+    <div onClick={onClick} className="right-arrow-card">
       <div className={className} style={{ ...style, display: "none" }} />
     </div>
   );
 }
 
-function SamplePrevArrow(props) {
+function SamplePrevArrowCard(props) {
   const { className, style, onClick } = props;
   return (
-    <div onClick={onClick} className="left-arrow">
+    <div onClick={onClick} className="left-arrow-card">
       <div className={className} style={{ ...style, display: "none" }} />
     </div>
   );
@@ -35,26 +35,26 @@ export default function CardSlider({ children }) {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
+          slidesToScroll: 1,
+        },
+      },
     ],
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrowCard />,
+    prevArrow: <SamplePrevArrowCard />,
   };
   return <Slider {...settings}> {children} </Slider>;
 }

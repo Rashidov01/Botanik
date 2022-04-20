@@ -1,8 +1,6 @@
 import React from "react";
 import "./Card.scss";
 import Img1 from "../../assets/img/img1.jpeg";
-// import Img4 from "../../assets/img/img6.jpeg";
-// import Img2 from "../../assets/img/blog-img.jpeg";
 
 export default function Card() {
   return (

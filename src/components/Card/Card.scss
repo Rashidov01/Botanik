@@ -2,10 +2,43 @@
 @import "../../variables.scss";
 
 .card {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.left-arrow-card {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../../assets/icon/forw.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.right-arrow-card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30px;
+  margin: auto;
+  background-image: url(../../assets/icon/back.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .box-card {
@@ -47,4 +80,21 @@
 
 .body-card__price {
   color: $grey-cl;
+}
+
+
+@include breakpoint-down(1310px){
+  .left-arrow-card{
+    top: auto;
+    left: auto;
+    right: 20px;
+    bottom: -20px;
+  }
+
+  .right-arrow-card{
+    top: auto;
+    left: auto;
+    bottom: -20px;
+    right: 60px;
+  }
 }
