@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Store-card.scss";
 import Img1 from "../../assets/img/img1.jpeg";
-import Img2 from "../../assets/img/blog-img.jpeg";
 
 export default function StoreCard() {
   const [list, setList] = useState(false);
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => {
+        const ismobile = window.innerWidth < 820;
+        if (ismobile !== list) setList(ismobile);
+      },
+      false
+    );
+  }, [list]);
   return (
     <>
       <div className="store-item__header">

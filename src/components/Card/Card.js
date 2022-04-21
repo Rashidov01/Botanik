@@ -4,11 +4,11 @@ import Img1 from "../../assets/img/img1.jpeg";
 
 export default function Card() {
   return (
-    <div className="card">
-      <div className="card__box box-card">
-        <div className="box-card__head head-card">
+    <div className="cardd">
+      <div className="card__box box-cardd">
+        <div className="box-card__head head-cardd">
           <img
-            className="head-card__img"
+            className="head-card__imgg"
             src={Img1}
             alt="card img"
             width="300"

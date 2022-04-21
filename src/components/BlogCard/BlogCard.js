@@ -1,5 +1,4 @@
 import React from "react";
-import "./BlogCard.scss";
 import Img2 from "../../assets/img/blog-img.jpeg";
 
 export default function BlogCard() {

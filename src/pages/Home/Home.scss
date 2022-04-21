@@ -94,7 +94,7 @@
     margin-right: 0;
   }
 
-  &:hover{
+  &:hover {
     border: 1px solid $border;
   }
 }
@@ -157,8 +157,13 @@
   color: $grey-cl;
 }
 
-.slick-dots li button::before{
- color: $green-cl !important;
+.slick-dots li button::before {
+  color: $green-cl !important;
+}
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  display: none !important;
 }
 
 //* reason mobile
@@ -178,8 +183,8 @@
   }
 }
 
-@include breakpoint-down(1024px){
-  .card-blog__box{
+@include breakpoint-down(1024px) {
+  .card-blog__box {
     border: 1px solid $border;
   }
 }
@@ -240,6 +245,20 @@
   .blog__detail-text {
     width: 100%;
     font-size: 12px;
+  }
+
+  .card-blog__box-date {
+    top: 12px;
+    left: 12px;
+    padding: 10px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .card-blog__box-day,
+  .card-blog__box-month {
+    display: inline-block;
+    font-size: 14px;
   }
 }
 

@@ -10,7 +10,7 @@
   background-color: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   display: flex;
 }
 
@@ -60,5 +60,56 @@
 
   &--active{
     color: $green-cl;
+  }
+}
+
+@include breakpoint-down(1200px){
+  .hero-page{
+    height: 260px;
+  }
+}
+
+@include breakpoint-down(1080px){
+  .hero-page{
+    height: 200px;
+  }
+
+  .hero-content__title{
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+
+  .breadcrumb__link{
+    line-height: 14px;
+    font-size: 15px;
+  }
+
+  .breadcrumb__item:not(:last-child)::after{
+    width: 1px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+}
+
+@include breakpoint-down(640px){
+  .hero-page{
+    height: 150px;
+  }
+}
+
+
+@include breakpoint-down(400px){
+  .hero-page{
+    height: 110px;
+    padding: 40px 0;
+  }
+
+  .hero-content__title{
+    font-size: 16px;
+  }
+
+  .breadcrumb__link{
+    line-height: 12px;
+    font-size: 12px;
   }
 }
