@@ -42,7 +42,7 @@
 }
 
 .box-cardd {
-  width: calc(94% - 15px);
+  width: calc(100% - 15px);
   height: auto;
   border-radius: 20px;
   padding: 20px;
@@ -100,6 +100,10 @@
 
 
 @include breakpoint-down(480px){
+  .box-cardd {
+    width: calc(940% - 15px);
+  }
+  
   .head-cardd,
   .head-card__imgg {
     width: 100% ;
