@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Store-card.scss";
-import Img1 from "../../assets/img/img01.jpeg";
+import Img1 from "../../assets/img/img1.jpeg";
 
 export default function StoreCard() {
   const [list, setList] = useState(false);

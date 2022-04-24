@@ -35,20 +35,20 @@
 }
 
 @mixin title {
+  position: relative;
   margin-bottom: 45px;
   text-align: center;
   font-size: 36px;
   line-height: 30px;
   color: $color-text;
-  position: relative;
 
   &:before {
     position: absolute;
+    right: 0;
     bottom: -30px;
     left: 0;
-    right: 0;
     margin: 0 auto;
-    background-image: url(../src/assets/img/title.png);
+    background-image: url(../assets/img/title.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

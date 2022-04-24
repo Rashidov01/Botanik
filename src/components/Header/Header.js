@@ -1,8 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import Logo from "../../assets/icon/logo-add.png"
+import React from "react";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/icon/logo-add.png";
 import "./header.scss";
-
 
 export default function Header() {
   return (
@@ -10,17 +9,35 @@ export default function Header() {
       <nav className="header-nav nav">
         <ul className="nav__list">
           <li className="nav__item">
-            <Link className="nav__link" to="/">Home</Link>
+            <Link className="nav__link" to="/">
+              Home
+            </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="/Store">Store</Link>
-          </li>
-          <li className="nav__item"><img className="nav__img" src={Logo} alt="site logo" width="80" height="80" /></li>
-          <li className="nav__item">
-            <Link className="nav__link" to="/About">About</Link>
+            <Link className="nav__link" to="/Store">
+              Store
+            </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="/Contact">Contact</Link>
+            <Link to="/">
+              <img
+                className="nav__img"
+                src={Logo}
+                alt="site logo"
+                width="80"
+                height="80"
+              />
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link className="nav__link" to="/About">
+              About
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link className="nav__link" to="/Contact">
+              Contact
+            </Link>
           </li>
           {/* <li className="nav__item">
             <Link className="nav__link" to="/CardOpen">Card opened</Link>
@@ -31,5 +48,5 @@ export default function Header() {
         </ul>
       </nav>
     </header>
-  )
+  );
 }

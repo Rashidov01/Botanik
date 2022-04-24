@@ -1,0 +1,12 @@
+.container{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.site-container{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

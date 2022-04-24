@@ -3,6 +3,7 @@ import "./Contact.scss";
 import { HeroPage } from "../../components";
 import location from "../../assets/icon/location-icon.svg";
 import phone from "../../assets/icon/phone-icon.svg";
+import clock from "../../assets/icon/clock.svg";
 
 export default function Contact() {
   return (
@@ -32,7 +33,7 @@ export default function Contact() {
               <div className="item-holder">
                 <img
                   className="item-contact__icon"
-                  src={location}
+                  src={phone}
                   alt="location icon"
                   width="25"
                   height="25"
@@ -49,7 +50,7 @@ export default function Contact() {
               <div className="item-holder">
                 <img
                   className="item-contact__icon"
-                  src={location}
+                  src={clock}
                   alt="location icon"
                   width="25"
                   height="25"

@@ -1,5 +1,5 @@
-@import "../../mixins.scss";
-@import "../../variables.scss";
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
 
 .cardd {
   position: relative;
@@ -103,7 +103,7 @@
   .box-cardd {
     width: calc(940% - 15px);
   }
-  
+
   .head-cardd,
   .head-card__imgg {
     width: 100% ;

@@ -2,6 +2,10 @@ import { Routes, Route } from "react-router-dom";
 import { Layout, About, Catalog, Contact, Home, Store,BlogOpen } from "./pages";
 import { CardOpen } from "./pages";
 
+//general styles
+import "./sass/main.scss";
+
+
 export default function App() {
   return (
     <Routes>

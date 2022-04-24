@@ -5,6 +5,8 @@ import ship from "../../assets/icon/shipping.svg";
 import call from "../../assets/icon/call.svg";
 import auto from "../../assets/icon/auto.svg";
 import Card from "../../components/Card/Card";
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 import {
   Footer,
@@ -15,12 +17,15 @@ import {
 } from "../../components";
 
 export default function Home() {
+  Aos.init({
+    duration: 1100
+  });
   return (
     <div className="home">
       <Header />
       <Hero />
       <div className="container">
-        <section className="news">
+        <section data-aos="zoom-in-down" className="news">
           <div className="news__detail">
             <h2 className="news__detail-title">New arrival</h2>
             <p className="news__detail-text">
@@ -36,10 +41,10 @@ export default function Home() {
             <Card />
           </CardSlider>
         </section>
-        <section className="reason">
+        <section  className="reason">
           <div className="reason__inner">
             <ul className="reason__list">
-              <li className="reason__item">
+              <li data-aos="zoom-in-down" className="reason__item">
                 <img
                   className="reason__item-icon"
                   src={ship}
@@ -50,7 +55,7 @@ export default function Home() {
                   <span className="reason-desc__time">On orders over $100</span>
                 </div>
               </li>
-              <li className="reason__item">
+              <li data-aos="zoom-in-down" className="reason__item">
                 <img
                   className="reason__item-icon"
                   src={auto}
@@ -63,7 +68,7 @@ export default function Home() {
                   </span>
                 </div>
               </li>
-              <li className="reason__item">
+              <li data-aos="zoom-in-down" className="reason__item">
                 <img
                   className="reason__item-icon"
                   src={ship}
@@ -74,7 +79,7 @@ export default function Home() {
                   <span className="reason-desc__time">On orders over $100</span>
                 </div>
               </li>
-              <li className="reason__item">
+              <li data-aos="zoom-in-down" className="reason__item">
                 <img className="reason__item-icon" src={call} alt="call icon" />
                 <div className="reason__item-desc reason-desc">
                   <h3 className="reason-desc__title">Support 24 / 7</h3>
@@ -102,7 +107,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="blog">
+        <section data-aos="zoom-in-down" className="blog">
           <div className="blog__detail">
             <h3 className="blog__detail-title">Latest News</h3>
             <p className="blog__detail-text">

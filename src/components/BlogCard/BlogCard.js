@@ -3,7 +3,7 @@ import Img2 from "../../assets/img/blog-img.jpeg";
 
 export default function BlogCard() {
   return (
-    <>
+    <div>
       <div className="blog__card card-blog">
         <div className="card-blog__box">
           <div className="card-blog__box-head">
@@ -30,6 +30,6 @@ export default function BlogCard() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

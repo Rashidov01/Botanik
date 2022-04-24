@@ -35,20 +35,8 @@ main{
   min-height: 76vh;
 }
 
-.site-container{
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.container{
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0px 15px;
 }
