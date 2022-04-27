@@ -4,7 +4,7 @@ import Img2 from "../../assets/img/blog-img.jpeg";
 export default function BlogCard() {
   return (
     <div>
-      <div className="blog__card card-blog">
+      <div data-aos="zoom-in-down" className="blog__card card-blog">
         <div className="card-blog__box">
           <div className="card-blog__box-head">
             <img

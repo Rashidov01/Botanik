@@ -8,7 +8,7 @@ export default function StoreCard() {
     window.addEventListener(
       "resize",
       () => {
-        const ismobile = window.innerWidth < 820;
+        const ismobile = window.innerWidth <= 820;
         if (ismobile !== list) setList(ismobile);
       },
       false

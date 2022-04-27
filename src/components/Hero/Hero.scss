@@ -45,7 +45,7 @@
 
 //*slider style
 .hero__slider {
-  padding: 100px 0;
+  padding: 140px 0;
   max-height: 767px;
   background-color: #f6f6f6;
   display: flex;
@@ -73,7 +73,7 @@
 .left-arrow {
   position: absolute;
   right: 20px;
-  bottom: -65px;
+  bottom: -85px;
   background-image: url(../../assets/icon/forw.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -87,7 +87,7 @@
 .right-arrow {
   position: absolute;
   right: 60px;
-  bottom: -65px;
+  bottom: -85px;
   background-image: url(../../assets/icon/back.svg);
   background-repeat: no-repeat;
   background-position: center;

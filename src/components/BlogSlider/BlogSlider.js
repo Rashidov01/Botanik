@@ -3,24 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// function SampleNextArrowCard(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div onClick={onClick} className="right-arrow-card">
-//       <div className={className} style={{ ...style, display: "none" }} />
-//     </div>
-//   );
-// }
-
-// function SamplePrevArrowCard(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div onClick={onClick} className="left-arrow-card">
-//       <div className={className} style={{ ...style, display: "none" }} />
-//     </div>
-//   );
-// }
-
 export default function BlogSlider({ children }) {
   const settings = {
     dots: true,
@@ -53,8 +35,6 @@ export default function BlogSlider({ children }) {
         },
       },
     ],
-    // nextArrow: <SampleNextArrowCard />,
-    // prevArrow: <SamplePrevArrowCard />,
   };
   return <Slider {...settings}> {children} </Slider>;
 }

@@ -18,14 +18,15 @@ import {
 
 export default function Home() {
   Aos.init({
-    duration: 1100
+    duration: 1100,
+    once: true,
   });
   return (
     <div className="home">
       <Header />
       <Hero />
       <div className="container">
-        <section data-aos="zoom-in-down" className="news">
+        <section className="news">
           <div className="news__detail">
             <h2 className="news__detail-title">New arrival</h2>
             <p className="news__detail-text">
@@ -107,7 +108,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section data-aos="zoom-in-down" className="blog">
+        <section className="blog">
           <div className="blog__detail">
             <h3 className="blog__detail-title">Latest News</h3>
             <p className="blog__detail-text">

@@ -2,12 +2,8 @@ import React from "react";
 import "./Card.scss";
 import Img1 from "../../assets/img/img1.jpeg";
 import 'aos/dist/aos.css';
-import Aos from 'aos';
 
 export default function Card() {
-  Aos.init({
-    duration: 1200
-  });
   return (
     <div data-aos="zoom-in-down" className="cardd">
       <div className="card__box box-cardd">

@@ -42,7 +42,7 @@ export default function Hero() {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div data-aos="zoom-in" className="hero">
+    <div className="hero">
       <div className="hero__inner">
         <div className="hero__entrance entrance-hero">
           <h1 className="entrance-hero__title">BotanikUz</h1>
